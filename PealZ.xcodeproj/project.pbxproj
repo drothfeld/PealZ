@@ -13,6 +13,7 @@
 		B0B434F02221061D00F73F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B434EF2221061D00F73F38 /* Assets.xcassets */; };
 		B0B434F32221061D00F73F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B434F12221061D00F73F38 /* LaunchScreen.storyboard */; };
 		B0B434FB2221086C00F73F38 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B0B434FA2221086C00F73F38 /* README.md */; };
+		B0B434FE2221090300F73F38 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B0B434FD2221090300F73F38 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B0B434F22221061D00F73F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0B434F42221061D00F73F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B434FA2221086C00F73F38 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B0B434FD2221090300F73F38 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +59,23 @@
 		B0B434E72221061C00F73F38 /* PealZ */ = {
 			isa = PBXGroup;
 			children = (
+				B0B434FC222108EB00F73F38 /* devOnly */,
 				B0B434E82221061C00F73F38 /* AppDelegate.swift */,
 				B0B434EA2221061C00F73F38 /* ViewController.swift */,
 				B0B434EC2221061C00F73F38 /* Main.storyboard */,
 				B0B434EF2221061D00F73F38 /* Assets.xcassets */,
 				B0B434F12221061D00F73F38 /* LaunchScreen.storyboard */,
 				B0B434F42221061D00F73F38 /* Info.plist */,
+				B0B434FD2221090300F73F38 /* .gitignore */,
 			);
 			path = PealZ;
+			sourceTree = "<group>";
+		};
+		B0B434FC222108EB00F73F38 /* devOnly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = devOnly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0B434FE2221090300F73F38 /* .gitignore in Resources */,
 				B0B434F32221061D00F73F38 /* LaunchScreen.storyboard in Resources */,
 				B0B434F02221061D00F73F38 /* Assets.xcassets in Resources */,
 				B0B434FB2221086C00F73F38 /* README.md in Resources */,
