@@ -14,6 +14,7 @@
 		B0B434F32221061D00F73F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B434F12221061D00F73F38 /* LaunchScreen.storyboard */; };
 		B0B434FB2221086C00F73F38 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B0B434FA2221086C00F73F38 /* README.md */; };
 		B0B434FE2221090300F73F38 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B0B434FD2221090300F73F38 /* .gitignore */; };
+		B0E9CCAB2221CB3F00E75622 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B0E9CCAA2221CB3F00E75622 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B0B434F42221061D00F73F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B434FA2221086C00F73F38 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B0B434FD2221090300F73F38 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B0E9CCA72221CAD900E75622 /* icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.psd; sourceTree = "<group>"; };
+		B0E9CCAA2221CB3F00E75622 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +62,11 @@
 		B0B434E72221061C00F73F38 /* PealZ */ = {
 			isa = PBXGroup;
 			children = (
+				B0E9CCA82221CB1700E75622 /* Assets */,
 				B0B434FC222108EB00F73F38 /* devOnly */,
 				B0B434E82221061C00F73F38 /* AppDelegate.swift */,
 				B0B434EA2221061C00F73F38 /* ViewController.swift */,
 				B0B434EC2221061C00F73F38 /* Main.storyboard */,
-				B0B434EF2221061D00F73F38 /* Assets.xcassets */,
 				B0B434F12221061D00F73F38 /* LaunchScreen.storyboard */,
 				B0B434F42221061D00F73F38 /* Info.plist */,
 				B0B434FD2221090300F73F38 /* .gitignore */,
@@ -74,8 +77,26 @@
 		B0B434FC222108EB00F73F38 /* devOnly */ = {
 			isa = PBXGroup;
 			children = (
+				B0E9CCA72221CAD900E75622 /* icon.psd */,
 			);
 			path = devOnly;
+			sourceTree = "<group>";
+		};
+		B0E9CCA82221CB1700E75622 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B0E9CCA92221CB3000E75622 /* Images */,
+				B0B434EF2221061D00F73F38 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B0E9CCA92221CB3000E75622 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B0E9CCAA2221CB3F00E75622 /* logo.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +159,7 @@
 			files = (
 				B0B434FE2221090300F73F38 /* .gitignore in Resources */,
 				B0B434F32221061D00F73F38 /* LaunchScreen.storyboard in Resources */,
+				B0E9CCAB2221CB3F00E75622 /* logo.png in Resources */,
 				B0B434F02221061D00F73F38 /* Assets.xcassets in Resources */,
 				B0B434FB2221086C00F73F38 /* README.md in Resources */,
 				B0B434EE2221061C00F73F38 /* Main.storyboard in Resources */,
