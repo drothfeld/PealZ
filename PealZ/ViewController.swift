@@ -12,6 +12,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     // UI Outlets
     @IBOutlet weak var DietFocusPicker: UIPickerView!
+    @IBOutlet weak var EnterNameTextField: UITextField!
     
     // Controller Values
     var dietFocusPickerData: [String] = [String]()
@@ -39,6 +40,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     // Capture the picker view selection
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print(dietFocusPickerData[row])
+    }
+    
+    // Format the picker text font
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        return NSAttributedString(string: dietFocusPickerData[row], attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
     }
     
     // Perform any additional UI setup
