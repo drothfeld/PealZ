@@ -18,116 +18,290 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dhu-Ja-Dxr" userLabel="Header View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhu-Ja-Dxr" userLabel="Header View">
                                 <rect key="frame" x="0.0" y="59" width="414" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="d9P-lz-vh6" userLabel="Logo Image">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="d9P-lz-vh6" userLabel="Logo Image">
                                         <rect key="frame" x="29" y="0.0" width="60" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="NU5-M1-XUl"/>
+                                            <constraint firstAttribute="width" constant="60" id="tA3-3v-pQo"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PealZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWP-O4-U2F" userLabel="Logo Label">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PealZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWP-O4-U2F" userLabel="Logo Label">
                                         <rect key="frame" x="97" y="10" width="81" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="OId-VK-VQJ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="81" id="lEU-dI-x1L"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="35"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="( Diet Parameters )" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFW-V8-sLP" userLabel="Section Label">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="( Diet Parameters )" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFW-V8-sLP" userLabel="Section Label">
                                         <rect key="frame" x="186" y="10" width="200" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="IpM-Wu-XEx"/>
+                                            <constraint firstAttribute="height" constant="50" id="x0g-OL-DRT"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="23"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="zFW-V8-sLP" firstAttribute="top" secondItem="dhu-Ja-Dxr" secondAttribute="top" constant="10" id="6rh-6f-slw"/>
+                                    <constraint firstAttribute="height" constant="60" id="MpB-Va-tHb"/>
+                                    <constraint firstItem="d9P-lz-vh6" firstAttribute="leading" secondItem="dhu-Ja-Dxr" secondAttribute="leading" constant="29" id="PlU-9r-EGX"/>
+                                    <constraint firstItem="rWP-O4-U2F" firstAttribute="top" secondItem="dhu-Ja-Dxr" secondAttribute="top" constant="10" id="Y9i-sL-IQr"/>
+                                    <constraint firstItem="d9P-lz-vh6" firstAttribute="top" secondItem="dhu-Ja-Dxr" secondAttribute="top" id="wk1-bx-WXG"/>
+                                    <constraint firstAttribute="trailing" secondItem="zFW-V8-sLP" secondAttribute="trailing" constant="28" id="y0G-5T-tHe"/>
+                                    <constraint firstItem="rWP-O4-U2F" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d9P-lz-vh6" secondAttribute="trailing" constant="8" symbolic="YES" id="zkN-yh-PDw"/>
+                                    <constraint firstItem="zFW-V8-sLP" firstAttribute="leading" secondItem="rWP-O4-U2F" secondAttribute="trailing" constant="8" id="zm8-cS-CaZ"/>
+                                </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TUI-kh-n4q" userLabel="Header View Divider Line">
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TUI-kh-n4q" userLabel="Header View Divider Line">
                                 <rect key="frame" x="46" y="136" width="323" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="NYb-Ra-ogy"/>
+                                </constraints>
                             </imageView>
-                            <view alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rhS-OO-Hq5" userLabel="Footer View">
-                                <rect key="frame" x="0.0" y="850" width="414" height="12"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwg-hr-hmi" userLabel="Parameter Toggle View">
+                                <rect key="frame" x="0.0" y="181" width="414" height="650"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="v0.0.1a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm6-Yp-mDB" userLabel="Version Number Label">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Meal Plan Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HcQ-P7-eFX" userLabel="Enter Name Text Field">
+                                        <rect key="frame" x="57" y="8" width="301" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="301" id="EFW-SX-FSO"/>
+                                            <constraint firstAttribute="height" constant="32" id="mb7-nP-9ZM"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="23"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="light" returnKeyType="done"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Daily Calorie Goal" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KpV-jS-Fid" userLabel="Enter Daily Calorie Goal Text Field">
+                                        <rect key="frame" x="57" y="71" width="301" height="32"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="23"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="light" returnKeyType="done"/>
+                                    </textField>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyh-R1-6Ba" userLabel="Diet Focus Picker">
+                                        <rect key="frame" x="57" y="137" width="301" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="arm-rM-fBs"/>
+                                            <constraint firstAttribute="width" constant="301" id="eTF-Kh-6Du"/>
+                                        </constraints>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegetarian:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arw-YB-8l3" userLabel="Vegetarian Switch Label">
+                                        <rect key="frame" x="57" y="275" width="120" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Ayg-7A-x2o"/>
+                                            <constraint firstAttribute="height" constant="45" id="l30-fQ-85h"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hl6-ij-6SB" userLabel="Vegetarian Switch">
+                                        <rect key="frame" x="311" y="282" width="49" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="1Rl-tq-vPe"/>
+                                            <constraint firstAttribute="width" constant="47" id="y5U-9i-Mge"/>
+                                        </constraints>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegan:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1h-Oh-RUa" userLabel="Vegan Switch Label">
+                                        <rect key="frame" x="57" y="328" width="72.5" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="2iS-Wn-rL4"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72.5" id="zUZ-Zt-t9l"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wq0-vt-IT2" userLabel="Vegan Switch">
+                                        <rect key="frame" x="311" y="335" width="49" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="hlz-Fg-02w"/>
+                                            <constraint firstAttribute="width" constant="47" id="nJa-eT-JYH"/>
+                                        </constraints>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gluten Free:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2f-aZ-Bv1" userLabel="Gluten Free Switch Label">
+                                        <rect key="frame" x="57" y="381" width="130" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="hYD-ZL-1RQ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="mmQ-ou-OqR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ka2-5P-o03" userLabel="Gluten Free Switch">
+                                        <rect key="frame" x="311" y="388" width="49" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="LKQ-ng-eaQ"/>
+                                            <constraint firstAttribute="width" constant="47" id="doX-gZ-8Wl"/>
+                                        </constraints>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dairy Free:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="771-PT-oAc" userLabel="Dairy Free Switch Label">
+                                        <rect key="frame" x="57" y="434" width="180" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="5uC-OR-Wst"/>
+                                            <constraint firstAttribute="height" constant="45" id="jGg-0j-pV0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Juz-gm-lgf" userLabel="Dairy Free Switch">
+                                        <rect key="frame" x="311" y="441" width="49" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="47" id="Ga4-3W-p0Z"/>
+                                            <constraint firstAttribute="height" constant="31" id="wuu-lp-UgF"/>
+                                        </constraints>
+                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAe-yf-AZp" userLabel="Reset Button">
+                                        <rect key="frame" x="57" y="587" width="100" height="55"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="eAS-sP-SuL"/>
+                                            <constraint firstAttribute="height" constant="55" id="nhk-yK-5CO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="35"/>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.imageView.layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ssS-Wl-bPa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OF1-Kh-txM" userLabel="Next Button">
+                                        <rect key="frame" x="258" y="587" width="100" height="55"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="NAe-1t-AUj"/>
+                                            <constraint firstAttribute="height" constant="55" id="Sbo-Rs-BN2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="35"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.imageView.layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sUy-9u-fBh"/>
+                                            <segue destination="4JP-47-Tmq" kind="show" id="Q9J-JR-mzG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Wq0-vt-IT2" firstAttribute="top" secondItem="Hl6-ij-6SB" secondAttribute="bottom" constant="22" id="42u-th-Xmp"/>
+                                    <constraint firstItem="Juz-gm-lgf" firstAttribute="top" secondItem="ka2-5P-o03" secondAttribute="bottom" constant="22" id="4fs-gb-89y"/>
+                                    <constraint firstItem="KpV-jS-Fid" firstAttribute="trailing" secondItem="HcQ-P7-eFX" secondAttribute="trailing" id="5Bt-j3-jQV"/>
+                                    <constraint firstItem="Hl6-ij-6SB" firstAttribute="top" secondItem="gyh-R1-6Ba" secondAttribute="bottom" constant="35" id="6Ti-yQ-gxp"/>
+                                    <constraint firstItem="KpV-jS-Fid" firstAttribute="leading" secondItem="A2f-aZ-Bv1" secondAttribute="leading" id="7us-xC-RCg"/>
+                                    <constraint firstAttribute="trailing" secondItem="ka2-5P-o03" secondAttribute="trailing" constant="56" id="AwC-sz-PrS"/>
+                                    <constraint firstItem="Arw-YB-8l3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lwg-hr-hmi" secondAttribute="leading" symbolic="YES" id="BeG-WP-nz9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hl6-ij-6SB" secondAttribute="trailing" constant="56" id="D3W-RG-p6c"/>
+                                    <constraint firstItem="Juz-gm-lgf" firstAttribute="leading" secondItem="771-PT-oAc" secondAttribute="trailing" constant="74" id="Dmn-vU-lfz"/>
+                                    <constraint firstAttribute="trailing" secondItem="OF1-Kh-txM" secondAttribute="trailing" constant="56" id="FjK-11-DO1"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wq0-vt-IT2" secondAttribute="trailing" constant="56" id="LFm-qg-US8"/>
+                                    <constraint firstItem="A2f-aZ-Bv1" firstAttribute="top" secondItem="p1h-Oh-RUa" secondAttribute="bottom" constant="8" id="Ne8-8x-x9n"/>
+                                    <constraint firstItem="ka2-5P-o03" firstAttribute="top" secondItem="Wq0-vt-IT2" secondAttribute="bottom" constant="22" id="NnF-yL-6d5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Juz-gm-lgf" secondAttribute="trailing" constant="56" id="O5c-0u-NF6"/>
+                                    <constraint firstItem="p1h-Oh-RUa" firstAttribute="top" secondItem="Arw-YB-8l3" secondAttribute="bottom" constant="8" id="O9Y-RQ-Kbs"/>
+                                    <constraint firstItem="p1h-Oh-RUa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lwg-hr-hmi" secondAttribute="leading" symbolic="YES" id="QeK-cY-3AU"/>
+                                    <constraint firstItem="DAe-yf-AZp" firstAttribute="leading" secondItem="lwg-hr-hmi" secondAttribute="leading" constant="57" id="RM4-mD-fNe"/>
+                                    <constraint firstItem="KpV-jS-Fid" firstAttribute="leading" secondItem="p1h-Oh-RUa" secondAttribute="leading" id="RU4-wn-vyF"/>
+                                    <constraint firstItem="Wq0-vt-IT2" firstAttribute="leading" secondItem="p1h-Oh-RUa" secondAttribute="trailing" constant="181.5" id="Tbg-Rd-0wn"/>
+                                    <constraint firstItem="KpV-jS-Fid" firstAttribute="leading" secondItem="HcQ-P7-eFX" secondAttribute="leading" id="UbC-Lf-hnn"/>
+                                    <constraint firstItem="Hl6-ij-6SB" firstAttribute="leading" secondItem="Arw-YB-8l3" secondAttribute="trailing" constant="134" id="VCe-cL-CBi"/>
+                                    <constraint firstItem="OF1-Kh-txM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DAe-yf-AZp" secondAttribute="trailing" constant="8" symbolic="YES" id="WFX-Ia-xkj"/>
+                                    <constraint firstItem="HcQ-P7-eFX" firstAttribute="leading" secondItem="lwg-hr-hmi" secondAttribute="leading" constant="57" id="WIm-8M-2IS"/>
+                                    <constraint firstAttribute="trailing" secondItem="HcQ-P7-eFX" secondAttribute="trailing" constant="56" id="Y2L-Xv-glx"/>
+                                    <constraint firstAttribute="bottom" secondItem="DAe-yf-AZp" secondAttribute="bottom" constant="8" id="dW1-aa-cWR"/>
+                                    <constraint firstItem="KpV-jS-Fid" firstAttribute="top" secondItem="HcQ-P7-eFX" secondAttribute="bottom" constant="31" id="dtN-rK-ulo"/>
+                                    <constraint firstItem="KpV-jS-Fid" firstAttribute="leading" secondItem="Arw-YB-8l3" secondAttribute="leading" id="eMr-PE-kgu"/>
+                                    <constraint firstItem="A2f-aZ-Bv1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lwg-hr-hmi" secondAttribute="leading" symbolic="YES" id="gR2-Bl-54d"/>
+                                    <constraint firstAttribute="bottom" secondItem="OF1-Kh-txM" secondAttribute="bottom" constant="8" id="gn3-li-DWq"/>
+                                    <constraint firstAttribute="trailing" secondItem="gyh-R1-6Ba" secondAttribute="trailing" constant="56" id="mr3-Nq-6bu"/>
+                                    <constraint firstItem="HcQ-P7-eFX" firstAttribute="top" secondItem="lwg-hr-hmi" secondAttribute="top" constant="8" id="n70-mc-Iyj"/>
+                                    <constraint firstItem="ka2-5P-o03" firstAttribute="leading" secondItem="A2f-aZ-Bv1" secondAttribute="trailing" constant="124" id="oAz-Xw-imR"/>
+                                    <constraint firstItem="gyh-R1-6Ba" firstAttribute="top" secondItem="KpV-jS-Fid" secondAttribute="bottom" constant="34" id="q7m-5y-BN2"/>
+                                    <constraint firstItem="gyh-R1-6Ba" firstAttribute="leading" secondItem="lwg-hr-hmi" secondAttribute="leading" constant="57" id="ule-V2-eco"/>
+                                    <constraint firstItem="771-PT-oAc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lwg-hr-hmi" secondAttribute="leading" symbolic="YES" id="xLG-C5-P5M"/>
+                                    <constraint firstItem="Arw-YB-8l3" firstAttribute="top" secondItem="gyh-R1-6Ba" secondAttribute="bottom" constant="28" id="xjH-Hk-To2"/>
+                                    <constraint firstItem="771-PT-oAc" firstAttribute="top" secondItem="A2f-aZ-Bv1" secondAttribute="bottom" constant="8" id="y7y-OV-Pky"/>
+                                    <constraint firstItem="KpV-jS-Fid" firstAttribute="leading" secondItem="771-PT-oAc" secondAttribute="leading" id="zfl-1J-sz5"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhS-OO-Hq5" userLabel="Footer View">
+                                <rect key="frame" x="0.0" y="850" width="414" height="12"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v0.0.1a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm6-Yp-mDB" userLabel="Version Number Label">
                                         <rect key="frame" x="371" y="0.0" width="35" height="12"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="Mvu-xi-KES"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="10"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwg-hr-hmi" userLabel="Parameter Toggle View">
-                                <rect key="frame" x="0.0" y="181" width="414" height="650"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Meal Plan Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HcQ-P7-eFX" userLabel="Enter Name Text Field">
-                                        <rect key="frame" x="57" y="8" width="301" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="23"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="light" returnKeyType="done"/>
-                                    </textField>
-                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gyh-R1-6Ba" userLabel="Diet Focus Picker">
-                                        <rect key="frame" x="57" y="46" width="301" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    </pickerView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vegetarian:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arw-YB-8l3" userLabel="Vegetarian Switch Label">
-                                        <rect key="frame" x="57" y="184" width="180" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hl6-ij-6SB" userLabel="Vegetarian Switch">
-                                        <rect key="frame" x="311" y="191" width="49" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vegan:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1h-Oh-RUa" userLabel="Vegan Switch Label">
-                                        <rect key="frame" x="57" y="237" width="180" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wq0-vt-IT2" userLabel="Vegan Switch">
-                                        <rect key="frame" x="311" y="244" width="49" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gluten Free:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2f-aZ-Bv1" userLabel="Gluten Free Switch Label">
-                                        <rect key="frame" x="57" y="290" width="180" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ka2-5P-o03" userLabel="Gluten Free Switch">
-                                        <rect key="frame" x="311" y="297" width="49" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dairy Free:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="771-PT-oAc" userLabel="Dairy Free Switch Label">
-                                        <rect key="frame" x="57" y="343" width="180" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Juz-gm-lgf" userLabel="Dairy Free Switch">
-                                        <rect key="frame" x="311" y="350" width="49" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </switch>
-                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Xm6-Yp-mDB" firstAttribute="trailing" secondItem="rhS-OO-Hq5" secondAttribute="trailingMargin" id="8Hd-Jh-hzx"/>
+                                    <constraint firstItem="Xm6-Yp-mDB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rhS-OO-Hq5" secondAttribute="leading" constant="20" symbolic="YES" id="Ftf-g9-oc6"/>
+                                    <constraint firstAttribute="height" constant="12" id="ONK-JG-zV0"/>
+                                    <constraint firstItem="Xm6-Yp-mDB" firstAttribute="top" secondItem="rhS-OO-Hq5" secondAttribute="top" id="gSV-ac-NM0"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.76470588235294112" green="0.77418040639999997" blue="0.4347320744" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lwg-hr-hmi" secondAttribute="bottom" constant="65" id="4f5-y7-G2I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TUI-kh-n4q" secondAttribute="trailing" constant="25" id="IXq-ai-Wop"/>
+                            <constraint firstItem="TUI-kh-n4q" firstAttribute="top" secondItem="dhu-Ja-Dxr" secondAttribute="bottom" constant="17" id="KWf-VS-d6F"/>
+                            <constraint firstItem="dhu-Ja-Dxr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="LQq-y0-btq"/>
+                            <constraint firstItem="rhS-OO-Hq5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TMm-dv-chL"/>
+                            <constraint firstItem="lwg-hr-hmi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XhC-j5-ADm"/>
+                            <constraint firstItem="TUI-kh-n4q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="YSw-Z3-RUa"/>
+                            <constraint firstItem="rhS-OO-Hq5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="a6i-c5-HTF"/>
+                            <constraint firstItem="rhS-OO-Hq5" firstAttribute="top" secondItem="lwg-hr-hmi" secondAttribute="bottom" constant="19" id="a8m-Xv-7sP"/>
+                            <constraint firstItem="lwg-hr-hmi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bcV-In-APK"/>
+                            <constraint firstItem="lwg-hr-hmi" firstAttribute="leading" secondItem="rhS-OO-Hq5" secondAttribute="leading" id="orx-0h-Hv4"/>
+                            <constraint firstItem="dhu-Ja-Dxr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="stl-6l-d6u"/>
+                            <constraint firstItem="lwg-hr-hmi" firstAttribute="trailing" secondItem="rhS-OO-Hq5" secondAttribute="trailing" id="uQy-aT-yhR"/>
+                            <constraint firstItem="rhS-OO-Hq5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wue-Hg-Ciy"/>
+                            <constraint firstItem="lwg-hr-hmi" firstAttribute="top" secondItem="TUI-kh-n4q" secondAttribute="bottom" constant="43" id="xy3-Ma-KAq"/>
+                            <constraint firstItem="dhu-Ja-Dxr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z2H-hK-Sb2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="DairyFreeSwitch" destination="Juz-gm-lgf" id="N7T-Kg-ssg"/>
                         <outlet property="DietFocusPicker" destination="gyh-R1-6Ba" id="h9s-MP-EXU"/>
+                        <outlet property="EnterDailyCalorieGoalTextField" destination="KpV-jS-Fid" id="hFs-Dt-s1Q"/>
                         <outlet property="EnterNameTextField" destination="HcQ-P7-eFX" id="m5H-PE-koy"/>
+                        <outlet property="GlutenFreeSwitch" destination="ka2-5P-o03" id="Ufm-gI-Q3W"/>
+                        <outlet property="NextButton" destination="OF1-Kh-txM" id="Ud4-iB-i8I"/>
+                        <outlet property="ResetButton" destination="DAe-yf-AZp" id="kLm-YW-jcV"/>
+                        <outlet property="VeganSwitch" destination="Wq0-vt-IT2" id="E6K-4L-I7V"/>
+                        <outlet property="VegetarianSwitch" destination="Hl6-ij-6SB" id="Gh6-t7-Ptk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

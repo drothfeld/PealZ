@@ -13,6 +13,13 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     // UI Outlets
     @IBOutlet weak var DietFocusPicker: UIPickerView!
     @IBOutlet weak var EnterNameTextField: UITextField!
+    @IBOutlet weak var EnterDailyCalorieGoalTextField: UITextField!
+    @IBOutlet weak var VegetarianSwitch: UISwitch!
+    @IBOutlet weak var VeganSwitch: UISwitch!
+    @IBOutlet weak var GlutenFreeSwitch: UISwitch!
+    @IBOutlet weak var DairyFreeSwitch: UISwitch!
+    @IBOutlet weak var ResetButton: UIButton!
+    @IBOutlet weak var NextButton: UIButton!
     
     // Controller Values
     var dietFocusPickerData: [String] = [String]()
@@ -53,5 +60,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         self.DietFocusPicker.dataSource = self
         dietFocusPickerData = ["Normal Balance", "Heavy Protein", "Extra Fiber", "Low Fat", "Carbo-Loading"]
     }
+    
+    // The Reset button is presesd
+    @IBAction func resetButtonPressed(_ sender: Any) {
+    }
+    
+    // The Next button is pressed
+    @IBAction func nextButtonPressed(_ sender: Any) {
+    }
+    
 }
 
