@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class DietParametersViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     // UI Outlets
     @IBOutlet weak var DietFocusPicker: UIPickerView!
