@@ -19,7 +19,7 @@ class GeneratedMealPlanViewController: UIViewController {
     @IBOutlet weak var GeneratedDinnerTextView: UITextView!
     
     // Controller Values
-    var dietFocus: String = ""
+    var dietFocus: DietFocus!
     var dietName: String = ""
     var calorieGoal: String = ""
     var isVegetarian: Bool = false

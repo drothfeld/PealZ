@@ -16,7 +16,7 @@ class FoodPreferencesViewController: UIViewController {
     @IBOutlet weak var DinnerFoodsTextView: UITextView!
     
     // Controller Values
-    var dietFocus: String = ""
+    var dietFocus: DietFocus!
     var dietName: String = ""
     var calorieGoal: String = ""
     var isVegetarian: Bool = false
