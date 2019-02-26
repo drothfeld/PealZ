@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class GeneratedMealPlanViewController: UIViewController {
     
@@ -47,7 +48,9 @@ class GeneratedMealPlanViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         parseFoodPreferenceData()
-        //getMealItemNutritionData(mealItem: "avacado toast")
+    
+        // TESTING NUTRITIONIX API CALL METHOD
+        let _ = getMealItemNutritionData(item: "avacado toast")
     }
     
     // Parse the breakfast/lunch/dinner food preferences raw data
@@ -59,8 +62,36 @@ class GeneratedMealPlanViewController: UIViewController {
     
     // Makes an API call to Nutritionix to gather
     // all nutritional data for meal item
-    func getMealItemNutritionData(mealItem: String) -> MealItem {
-        // TODO: Complete API call and create local meal item model
+    func getMealItemNutritionData(item: String) -> MealItem {
+        // API URL
+        let url = URL(string: "https://trackapi.nutritionix.com/v2/natural/nutrients")
+        let unwrappedURL = url!
+        
+        // API JSON BODY
+        let json: [String: Any] = ["query": item,
+                                   "timezone": "US/Eastern"]
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        
+        // API request setup
+        var request = URLRequest(url: unwrappedURL)
+        request.httpBody = jsonData
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue(nutritionixApplicationId, forHTTPHeaderField: "x-app-id")
+        request.addValue(nutritionixApplicationKey, forHTTPHeaderField: "x-app-key")
+        
+        // Make API call
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print(error?.localizedDescription ?? "No data")
+                return
+            }
+            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+            if let responseJSON = responseJSON as? [String: Any] {
+                print(responseJSON)
+            }
+        }
+        task.resume()
         
         return MealItem(name: "NULL", quantity: 1, totalCarbs: 0, totalFat: 0, totalCalories: 0, totalProtein: 0, totalFiber: 0, totalSugar: 0)
     }
