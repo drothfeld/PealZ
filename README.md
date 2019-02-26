@@ -2,7 +2,7 @@
 # PealZ
 iOS Application
 
-Version 0.0.1
+Version 0.1.4
 
 **Description:**
 - PealZ is an iOS application that can be used to generate a balanced nutritional meal plan for a user given specific food preferences.

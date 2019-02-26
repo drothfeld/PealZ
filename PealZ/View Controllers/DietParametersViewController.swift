@@ -45,8 +45,8 @@ class DietParametersViewController: UIViewController, UIPickerViewDelegate, UIPi
     }
     
     // Capture the picker view selection
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print(dietFocusPickerData[row])
+    private func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) -> String? {
+        return dietFocusPickerData[row]
     }
     
     // Format the picker text font
