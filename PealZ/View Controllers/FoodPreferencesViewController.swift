@@ -16,13 +16,13 @@ class FoodPreferencesViewController: UIViewController {
     @IBOutlet weak var DinnerFoodsTextView: UITextView!
     
     // Controller Values
-    var dietFocus: String!
-    var dietName: String!
-    var calorieGoal: String!
-    var isVegetarian: Bool!
-    var isVegan: Bool!
-    var isGlutenFree: Bool!
-    var isDairyFree: Bool!
+    var dietFocus: String = ""
+    var dietName: String = ""
+    var calorieGoal: String = ""
+    var isVegetarian: Bool = false
+    var isVegan: Bool = false
+    var isGlutenFree: Bool = false
+    var isDairyFree: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()

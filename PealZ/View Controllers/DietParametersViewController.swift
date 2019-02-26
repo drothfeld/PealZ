@@ -80,8 +80,8 @@ class DietParametersViewController: UIViewController, UIPickerViewDelegate, UIPi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let controller = segue.destination as! FoodPreferencesViewController
         controller.dietFocus = dietFocusPickerData[DietFocusPicker.selectedRow(inComponent: 0)]
-        controller.dietName = EnterNameTextField.text
-        controller.calorieGoal = EnterDailyCalorieGoalTextField.text
+        controller.dietName = EnterNameTextField.text ?? ""
+        controller.calorieGoal = EnterDailyCalorieGoalTextField.text ?? ""
         controller.isVegetarian = VegetarianSwitch.isOn
         controller.isVegan = VeganSwitch.isOn
         controller.isGlutenFree = GlutenFreeSwitch.isOn

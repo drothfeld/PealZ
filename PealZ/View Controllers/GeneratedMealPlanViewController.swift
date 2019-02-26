@@ -19,16 +19,19 @@ class GeneratedMealPlanViewController: UIViewController {
     @IBOutlet weak var GeneratedDinnerTextView: UITextView!
     
     // Controller Values
-    var dietFocus: String!
-    var dietName: String!
-    var calorieGoal: String!
-    var isVegetarian: Bool!
-    var isVegan: Bool!
-    var isGlutenFree: Bool!
-    var isDairyFree: Bool!
-    var breakfastFoodsRawString: String!
-    var lunchFoodsRawString: String!
-    var dinnerFoodsRawString: String!
+    var dietFocus: String = ""
+    var dietName: String = ""
+    var calorieGoal: String = ""
+    var isVegetarian: Bool = false
+    var isVegan: Bool = false
+    var isGlutenFree: Bool = false
+    var isDairyFree: Bool = false
+    var breakfastFoodsRawString: String = ""
+    var lunchFoodsRawString: String = ""
+    var dinnerFoodsRawString: String = ""
+    var breakfastFoodsList: [String] = []
+    var lunchFoodsList: [String] = []
+    var dinnerFoodsList: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
