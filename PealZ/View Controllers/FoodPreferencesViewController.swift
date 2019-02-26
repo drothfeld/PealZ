@@ -9,12 +9,38 @@
 import UIKit
 
 class FoodPreferencesViewController: UIViewController {
+    
+    // UI Outlets
     @IBOutlet weak var BreakfastFoodsTextView: UITextView!
     @IBOutlet weak var LunchFoodsTextView: UITextView!
     @IBOutlet weak var DinnerFoodsTextView: UITextView!
     
+    // Controller Values
+    var dietFocus: String!
+    var dietName: String!
+    var calorieGoal: String!
+    var isVegetarian: Bool!
+    var isVegan: Bool!
+    var isGlutenFree: Bool!
+    var isDairyFree: Bool!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    // Prepare segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as! GeneratedMealPlanViewController
+        controller.dietFocus = dietFocus
+        controller.dietName = dietName
+        controller.calorieGoal = calorieGoal
+        controller.isVegetarian = isVegetarian
+        controller.isVegan = isVegan
+        controller.isGlutenFree = isGlutenFree
+        controller.isDairyFree = isDairyFree
+        controller.breakfastFoodsRawString = BreakfastFoodsTextView.text
+        controller.lunchFoodsRawString = LunchFoodsTextView.text
+        controller.dinnerFoodsRawString = DinnerFoodsTextView.text
     }
     
     // The Next button is pressed
