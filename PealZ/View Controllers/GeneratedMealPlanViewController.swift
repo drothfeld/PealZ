@@ -35,6 +35,14 @@ class GeneratedMealPlanViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        parseFoodPreferenceData()
+    }
+    
+    // Parse the breakfast/lunch/dinner food preferences raw data
+    func parseFoodPreferenceData() {
+        breakfastFoodsList = breakfastFoodsRawString.components(separatedBy: ",")
+        lunchFoodsList = lunchFoodsRawString.components(separatedBy: ",")
+        dinnerFoodsList = dinnerFoodsRawString.components(separatedBy: ",")
     }
     
     // The Reset button is pressed
