@@ -60,9 +60,16 @@ class DietParametersViewController: UIViewController, UIPickerViewDelegate, UIPi
         self.DietFocusPicker.dataSource = self
         dietFocusPickerData = ["Normal Balance", "Heavy Protein", "Extra Fiber", "Low Fat", "Carbo-Loading"]
     }
-    
+
     // The Reset button is presesd
     @IBAction func resetButtonPressed(_ sender: Any) {
+        DietFocusPicker.selectRow(0, inComponent: 0, animated: true)
+        EnterNameTextField.text = ""
+        EnterDailyCalorieGoalTextField.text = ""
+        VegetarianSwitch.isOn = false
+        VeganSwitch.isOn = false
+        GlutenFreeSwitch.isOn = false
+        DairyFreeSwitch.isOn = false
     }
     
     // The Next button is pressed
