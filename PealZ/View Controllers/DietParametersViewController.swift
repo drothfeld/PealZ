@@ -58,7 +58,17 @@ class DietParametersViewController: UIViewController, UIPickerViewDelegate, UIPi
     func interfaceSetup() {
         self.DietFocusPicker.delegate = self
         self.DietFocusPicker.dataSource = self
-        dietFocusPickerData = ["Normal Balance", "Heavy Protein", "Extra Fiber", "Low Fat", "Carbo-Loading"]
+        dietFocusPickerData = ["Normal Balance",
+                               "Heavy Protein",
+                               "Low Protein",
+                               "Heavy Fiber",
+                               "Low Fiber",
+                               "Heavy Fat",
+                               "Low Fat",
+                               "Heavy Sugar",
+                               "Low Sugar",
+                               "Heavy Carbs",
+                               "Low Carbs"]
     }
 
     // The Reset button is presesd

@@ -47,6 +47,7 @@ class GeneratedMealPlanViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         parseFoodPreferenceData()
+        //getMealItemNutritionData(mealItem: "avacado toast")
     }
     
     // Parse the breakfast/lunch/dinner food preferences raw data
