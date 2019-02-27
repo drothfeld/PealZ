@@ -34,6 +34,7 @@ class GeneratedMealPlanViewController: UIViewController {
     var breakfastFoodsList: [String] = []
     var lunchFoodsList: [String] = []
     var dinnerFoodsList: [String] = []
+    var allMealItemPermutationsList: [[String]] = [[], [], []]
     
     var finalBreakfast: [MealItem] = []
     var finalLunch: [MealItem] = []
@@ -48,6 +49,7 @@ class GeneratedMealPlanViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         parseFoodPreferenceData()
+        allMealItemPermutationsList = getAllMealItemPermutations(breakfast: breakfastFoodsList, lunch: lunchFoodsList, dinner: dinnerFoodsList)
     
         // TESTING NUTRITIONIX API CALL METHOD
 //        var testMealItem = getMealItemNutritionData(item: "avocado toast")
@@ -59,6 +61,46 @@ class GeneratedMealPlanViewController: UIViewController {
         breakfastFoodsList = breakfastFoodsRawString.components(separatedBy: ",")
         lunchFoodsList = lunchFoodsRawString.components(separatedBy: ",")
         dinnerFoodsList = dinnerFoodsRawString.components(separatedBy: ",")
+    }
+    
+    // Put together lists of all possible food combinations
+    // for each meal based on user food preference input
+    func getAllMealItemPermutations(breakfast: [String], lunch: [String], dinner: [String]) -> [[String]] {
+        var breakfastCombos: [String] = []
+        var lunchCombos: [String] = []
+        var dinnerCombos: [String] = []
+        
+        // Permutating all unique breakfast combos
+        for item_one in breakfast {
+            breakfastCombos.append(item_one)
+            for item_two in breakfast {
+                if (item_one != item_two) {
+                    breakfastCombos.append(item_one + " " + item_two)
+                }
+            }
+        }
+        
+        // Permutating all unique lunch combos
+        for item_one in lunch {
+            lunchCombos.append(item_one)
+            for item_two in lunch {
+                if (item_one != item_two) {
+                    lunchCombos.append(item_one + " " + item_two)
+                }
+            }
+        }
+        
+        // Permutating all unique dinner combos
+        for item_one in dinner {
+            dinnerCombos.append(item_one)
+            for item_two in dinner {
+                if (item_one != item_two) {
+                    dinnerCombos.append(item_one + " " + item_two)
+                }
+            }
+        }
+        
+        return [breakfastCombos, lunchCombos, dinnerCombos]
     }
     
     // Makes an API call to Nutritionix to gather
