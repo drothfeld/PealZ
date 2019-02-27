@@ -11,6 +11,7 @@
 		B06709752225BD4400B2C95F /* DietFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06709742225BD4400B2C95F /* DietFocus.swift */; };
 		B06709772225C1B400B2C95F /* DietFocuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06709762225C1B400B2C95F /* DietFocuses.swift */; };
 		B06709792225C88E00B2C95F /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06709782225C88E00B2C95F /* APIKeys.swift */; };
+		B067097B2225CBD700B2C95F /* MealItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B067097A2225CBD700B2C95F /* MealItems.swift */; };
 		B09E9C682224B041002DF08E /* FoodPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E9C672224B041002DF08E /* FoodPreferencesViewController.swift */; };
 		B09E9C6A2224B9EF002DF08E /* GeneratedMealPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E9C692224B9EF002DF08E /* GeneratedMealPlanViewController.swift */; };
 		B0B434E92221061C00F73F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B434E82221061C00F73F38 /* AppDelegate.swift */; };
@@ -28,6 +29,7 @@
 		B06709742225BD4400B2C95F /* DietFocus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietFocus.swift; sourceTree = "<group>"; };
 		B06709762225C1B400B2C95F /* DietFocuses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietFocuses.swift; sourceTree = "<group>"; };
 		B06709782225C88E00B2C95F /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		B067097A2225CBD700B2C95F /* MealItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealItems.swift; sourceTree = "<group>"; };
 		B09E9C672224B041002DF08E /* FoodPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPreferencesViewController.swift; sourceTree = "<group>"; };
 		B09E9C692224B9EF002DF08E /* GeneratedMealPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedMealPlanViewController.swift; sourceTree = "<group>"; };
 		B0B434E52221061C00F73F38 /* PealZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PealZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				B06709762225C1B400B2C95F /* DietFocuses.swift */,
+				B067097A2225CBD700B2C95F /* MealItems.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				B06709772225C1B400B2C95F /* DietFocuses.swift in Sources */,
 				B09E9C6A2224B9EF002DF08E /* GeneratedMealPlanViewController.swift in Sources */,
 				B0B434EB2221061C00F73F38 /* DietParametersViewController.swift in Sources */,
+				B067097B2225CBD700B2C95F /* MealItems.swift in Sources */,
 				B06709722225B8C300B2C95F /* MealItem.swift in Sources */,
 				B09E9C682224B041002DF08E /* FoodPreferencesViewController.swift in Sources */,
 				B06709792225C88E00B2C95F /* APIKeys.swift in Sources */,
